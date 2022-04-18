@@ -10,6 +10,9 @@ api point
 - MongoDB (Database)
 
 I used Docker to make it easier to develop the API Service
+I used NodeJS to make it readable for any users
+I user AJV for validation
+I used MongoDB to make it faster and flexibility. Since i used MongoDB Native, i provide a library to make it easier to be used in /pointSystem/libs/db/.
 
 there are 2 main API,
 - USER, `/api/users`

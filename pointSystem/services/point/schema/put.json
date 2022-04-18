@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+        "point",
+        "type"
+    ],
+    "properties": {
+        "point": {
+            "type": "number",
+            "errorMessage": {
+                "type": "Point should be number!"
+            }
+        },
+        "type": {
+            "type": "string",
+            "enum": ["increase", "decrease"],
+            "errorMessage": {
+                "type": "Please select one of the list!"
+            }
+        }
+    },
+    "additionalProperties": false,
+    "errorMessage": {
+        "type": "should be an object",
+        "required": {
+            "point": "Point is required!",
+            "type": "Type is required!"
+        }
+    }
+}

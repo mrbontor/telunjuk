@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "d8048ef1-fce6-4913-981a-4d869cde3f5d",
+		"name": "TELUNJUK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"user test\",\n    \"username\": \"usertest\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"user test\",\n    \"username\": \"usertest\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/625d8bf150e4ad749d96598a",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"625d8bf150e4ad749d96598a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DETAIL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/users/625d8bf150e4ad749d96598a",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"625d8bf150e4ad749d96598a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/users/625d8da3033ee7eeb6464605",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"625d8da3033ee7eeb6464605"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POINT",
+			"item": [
+				{
+					"name": "LIST POINT",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiZXlKcGRpSTZJa1JQVkd3M1NGcExkWEZMTTNwTVUxVWlMQ0psYm1OeWVYQjBaV1JFWVhSaElqb2lWRmxGZG1Wd05uazNVRTh5VUdGWE1XSm9TblZNYTBwa2RGSTBaVlkzZHpkcGIwWnVNa2xHYTI1bE1XSTVOVGN6Y2pKQlFqRmphUzlGZUZoR1lrcFdTRUZvU25ac1ZreHBRbVk0T0VKQk0zVm9XVnBaY0RoS2QyUkJRV1ZZUnpWQlpESTRUVkEwZWtFeFFYZHdTVFU1TmtOcU9HSjBkVTFyZUVkemIwcDFkM2RISzBRMllYQXdOVTl0ZUZnaUxDSmhkWFJvSWpvaVVXUkZiVU5NVlc0MWRsRXphMlpoV2tZclRGRmpkejA5SW4wPSIsImlhdCI6MTY1MDExNTM5OCwiZXhwIjoxNjUwMTE4OTk4LCJhdWQiOiJkYW5zbXVsdGlwcm8uY29tIiwiaXNzIjoiZGFuc211bHRpcHJvLmNvbSJ9.IwQgeUKtTCNNINDAeq_sgHWAD3tCYKYtL4yhwEF7k7w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/points",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"points"
+							],
+							"query": [
+								{
+									"key": "userID",
+									"value": "625d8efcd01d330830f6773a",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POINT DETAIL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/points/625d8efcd01d330830f6773a",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"points",
+								"625d8efcd01d330830f6773a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"point\": 4,\n    \"type\": \"increase\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/points/625d8efcd01d330830f6773a",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"points",
+								"625d8efcd01d330830f6773a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
